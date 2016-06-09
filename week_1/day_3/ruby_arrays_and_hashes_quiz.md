@@ -110,7 +110,7 @@ lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'P
 6. Return an array of Avril's favorite numbers that are even
   return users["Avril"][:favourite_numbers].map{ |num| num if num % 2 == 0 }.compact
 7. Return an array of Jonathans favourite numbers, sorted in ascending order and excluding duplicates
-  return ["Jo"][:favourite_numbers].uniq
+  return ["Jo"][:favourite_numbers].uniq.sort
 8. Add the number `7` to Erik's favorite numbers
   return users["Avril"][:favourite_numbers] << 7
   return users["Avril"][:favourite_numbers].push(7)
