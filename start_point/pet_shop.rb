@@ -22,10 +22,22 @@ def stock_count(pets_shop)
   return pets_shop[:pets].length
 end
 
-def pets_by_breed(pets_shop)
-  breed_count = 0
-  for pets in pets_shop[:pets]
-    breed_count += 1 if pets_shop[:pets][:breed]
+def pets_by_breed(pets_shop, breed_name)
+  matched_pets = []
+
+  for pet in pets_shop[:pets]
+    matched_pets <<  pet if pet[:breed] == breed_name
   end
-  return breed_count
+  return matched_pets
+
 end
+
+# def find_pet_by_name(pet_shop, pet_name)
+#   return 
+# end
+
+
+
+
+
+
